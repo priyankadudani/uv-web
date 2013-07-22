@@ -1,0 +1,98 @@
+body {
+	font-family: Helvetica,Arial,Ubuntu,Sans;
+	min-height: 1200px;
+	margin: 0 0;
+}
+
+.w {
+	width: 100%;
+}
+
+.c {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #47494d;
+	border-bottom: 2px solid #ff9053;
+	box-shadow: 0px 2px 2px #999;
+}
+
+.logo {
+	font-size: 31px;
+	font-family: Arial;
+	padding: 7px 8px;
+}
+
+.logo span:first-child {
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.logo span:last-child {
+	color: #ff9053;
+	margin-left: -9px;
+	cursor: pointer;
+}
+
+.logo.hovered span:first-child {
+	color: #ff9053;
+}
+
+.logo.hovered span:last-child {
+	color: #fff;
+}
+
+.nav li {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	padding: 14px 12px;
+	border-top: 2px solid #47494d;
+	border-bottom: 2px solid #47494d;
+}
+
+.nav a:hover {
+	color: #ff9053;
+	border-top: 2px solid #ff9053;
+}
+
+.banner {
+	border-top: 4px solid #ff9053;
+	border-bottom: 1px solid #ff9053;
+	margin-top: 50px;
+	font-size: 10px;
+	font-style: italic;
+}
+
+.banner div {
+
+}
+
+.rf {
+	float: right;
+}
+
+.lf {
+	float: left;
+}
+
+.clearfix {
+	overflow: hidden;
+}
+
+.clearfix:after {
+	clear:both;
+}
