@@ -57,7 +57,7 @@ body {
 
 .nav li a {
 	text-decoration: none;
-	color: #fff;
+	color: #e1e1e1;
 	width: 100px;
 	padding: 14px 12px;
 	border-top: 2px solid #47494d;
@@ -74,11 +74,20 @@ body {
 	border-bottom: 1px solid #ff9053;
 	margin-top: 50px;
 	font-size: 10px;
-	font-style: italic;
+	color: #737373;
 }
 
-.banner div {
+.banner .lf {
+	margin-left: 5px;
+}
 
+.banner .rf {
+	margin-right: 16px;
+}
+
+.graphs > div {
+	width: 100%;
+//height: 400px;
 }
 
 .rf {
