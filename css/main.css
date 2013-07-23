@@ -112,6 +112,7 @@ body {
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
 }
 
 
@@ -119,6 +120,8 @@ body {
 .flipper {
 	-webkit-transition: 0.6s;
 	-webkit-transform-style: preserve-3d;
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
 	width:180px;
 	position: relative;
 }
@@ -126,6 +129,7 @@ body {
 /* hide back of pane during swap */
 .front, .back {
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
 
 	position: absolute;
 	top: 0;
@@ -140,4 +144,5 @@ body {
 /* back, initially hidden pane */
 .back {
 	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
 }
