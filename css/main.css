@@ -27,7 +27,6 @@ body {
 	font-family: Arial;
 	padding: 7px 8px;
 }
-
 .logo span:first-child {
 	font-size: 25px;
 	color: #fff;
@@ -61,7 +60,7 @@ body {
 	width: 100px;
 	padding: 14px 12px;
 	border-top: 2px solid #47494d;
-	border-bottom: 2px solid #47494d;
+	/*border-bottom: 2px solid #47494d;*/
 }
 
 .nav a:hover {
@@ -95,4 +94,41 @@ body {
 
 .clearfix:after {
 	clear:both;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
+}
+
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	width:130px;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
 }
