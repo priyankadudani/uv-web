@@ -113,6 +113,7 @@ body {
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
 }
 
 
@@ -122,6 +123,8 @@ body {
 	-webkit-transform-style: preserve-3d;
 	-moz-transition: 0.6s;
 	-moz-transform-style: preserve-3d;
+	-ms-transition: 0.6s;
+	-ms-transform-style: preserve-3d;
 	width:180px;
 	position: relative;
 }
@@ -145,4 +148,5 @@ body {
 .back {
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
 }
