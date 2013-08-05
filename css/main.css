@@ -1,6 +1,5 @@
 body {
-	font-family: Helvetica,Arial,Ubuntu,Sans;
-	min-height: 1200px;
+	font-family: "Noto Sans",Helvetica,Arial,Ubuntu,Sans;
 	margin: 0 0;
 }
 
@@ -17,7 +16,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #47494d;
+	background-color: #000;
 	border-bottom: 2px solid #ff9053;
 	box-shadow: 0px 2px 2px #999;
 }
@@ -172,4 +171,57 @@ body {
 	font-family: "Noto Sans","Arial";
 	font-size: 13px;
 	padding: 5px 10px;
+}
+
+.footer {
+	background-color: #222;
+}
+
+.footer-links {
+	padding: 5px 0;
+}
+
+.link-block > div {
+	padding-left: 8px;
+}
+
+.link-block {
+	vertical-align: top;	
+	width: 24%;
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.block-header {
+	font-size: 15px;
+	color: #EEE;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+
+.block-header:after {
+	border-top: 1px dashed #BBB;
+	text-align: center;
+	height: 2px;
+}
+
+.block-link {
+	font-size: 13px;
+	color: #DDD;
+	padding: 1px 0;
+}
+
+.copyright-notice {
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Noto Sans";
+	font-size: 11px;
+	color: #EEE;
+	padding: 10px 0;
+}
+
+.follow-us img {
+	width: 36px;
+	height: 36px;
 }
