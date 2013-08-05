@@ -144,10 +144,23 @@
 				<div class="group-content">
 					<div class="group-title">Graph Definition</div>
 					<div class="group-desc">
-					During the entire development phase, we wanted to make things easier and simpler for the end user and at the end we've managed to deliver something really amazing, a single function API. We call it the one function to rule them all (charts, we mean).
-						<div class="code-ex">var chartObject = uv.chart(chartType, graphDefinition, optionalConfiguration)</div>
+					The second parameter to our function is <strong>Graph Definition</strong>, which is a representation of the data which uvCharts can comprehend. Its a simple JSON object with 2 name-value pairs, categories and dataset.
+					
+						<div class="code-ex"> 
+<pre>var graphdef = {
+	categories : [],
+	dataset : {}
+}
+</pre>
+						</div>
 						
-						The function returns a uvChart object which exposes d3 selections so more adventurous users can harness the power of d3 even after the chart is created.
+						<div id="graphdef-categories" class="doc-subgroup">
+							<div class="subgroup-title">Categories:</div>
+							<div class="subgroup-desc">
+								<p>Categories is a simple array of strings, which stand as the name of series of data. Categories not only defines which series of data among the dataset is rendered in the final chart but also the order in which it is rendered.</p>
+								<p>A single element category array will define a single series chart whereas any number more than that will lead to a multiseries chart except in the case of Pie, Donut, Polar Area in which only the first Category will be rendered in the final chart.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

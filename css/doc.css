@@ -113,6 +113,15 @@ div.group-desc {
 	margin: 6px 0;
 }
 
+.subgroup-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.main-links a {
+	color: #356AA0;
+}
+
 .code-ex {
 	border-radius: 4px;
 	padding: 2px 10px;
