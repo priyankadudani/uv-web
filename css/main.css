@@ -150,3 +150,26 @@ body {
 	-moz-transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);
 }
+
+.highlight {
+	display: inline-block;
+	width: 30%;
+	padding: 10px;
+}
+
+.highlight .ht-header {
+	text-align: center;
+	font-family: "Merriweather Sans","Noto Sans","Arial";
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff9053;
+	padding: 5px 0;
+	padding-top: 10px;
+}
+
+.highlight .ht-summary {
+	text-align: left;
+	font-family: "Noto Sans","Arial";
+	font-size: 13px;
+	padding: 5px 10px;
+}
