@@ -173,6 +173,13 @@ body {
 	padding: 5px 10px;
 }
 
+.features-list:after {
+	text-align: center;
+	width: 80%;
+	height: 1px;
+	background-color: #000;
+}
+
 .footer {
 	background-color: #222;
 }
@@ -207,7 +214,7 @@ body {
 }
 
 .block-link {
-	font-size: 13px;
+	font-size: 11px;
 	color: #DDD;
 	padding: 1px 0;
 }
@@ -225,3 +232,12 @@ body {
 	width: 36px;
 	height: 36px;
 }
+
+.features-list li {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+a:visited {
+	color: #FFF;
+};
