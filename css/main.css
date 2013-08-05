@@ -206,10 +206,17 @@ body {
 	height: 2px;
 }
 
-.block-link {
+.block-link{
 	font-size: 13px;
 	color: #DDD;
 	padding: 1px 0;
+}
+
+.block-link a{
+	font-size: 13px;
+	color: #DDD;
+	padding: 1px 0;
+	text-decoration:none;
 }
 
 .copyright-notice {
