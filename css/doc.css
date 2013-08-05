@@ -67,8 +67,9 @@ body > div {
 }
 
 .doc-menu {
+	min-width: 100px;
 	width: 12.5%;
-	background-color: #111;
+	background-color: #2C3C6D;
 	color: #fff;
 	position: fixed;
 	left: 0;
