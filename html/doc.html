@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>uvCharts Documentation</title>
+		<link rel="stylesheet" href="../css/doc.css" />	
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Alef|Merriweather+Sans|Exo' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="doc-menu">
+			<div class="doc-title" style="font-size:32px">uvCharts</div>
+			<div class="doc-subtitle" style="font-size:18px">Documentation</div>
+			
+			<div class="doc-nav-group">
+				<div class="doc-nav-header">
+					<a href="#API">API</a>
+				</div>
+			</div>
+			
+			<div class="doc-nav-group">
+				<div class="doc-nav-header">
+					<a href="#charts">Charttypes</a>
+				</div>
+			</div>
+			
+			<div class="doc-nav-group">
+				<div class="doc-nav-header">
+					<a href="#graphdef">Graph Definition</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#graphdef-categories">categories</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#graphdef-dataset">dataset</a>
+				</div>
+			</div>
+			
+			<div class="doc-nav-group">
+				<div class="doc-nav-header">
+					<a href="#graphdef">Configuration</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-graph">graph</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">meta</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-graph">frame</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">axis</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-graph">label</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">caption</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-graph">subCaption</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">meta</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">bar</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-graph">axis</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">pie</a>
+				</div>
+				<div class="doc-nav-link">
+					<a href="#config-meta">donut</a>
+				</div>
+			</div>
+		</div>
+		<div class="doc-content">
+			<div class="title" style="text-align:center;">
+				<div class="main-title" style="font-size:48px;">uvCharts</div>
+				<div class="main-version" style="font-size:24px;">Documentation Version: 1.0.0</div>
+				<div class="main-links">
+					<a href="http://www.github.com/imaginea/uvCharts/dist">Download</a> | <a href="http://www.github.com/imaginea/uvCharts">Github Page</a> | <a href="http://www.github.com/imaginea/uvCharts/wiki/guide">Tutorial</a>
+				</div>
+			</div>
+			
+			<div id="introduction" class="doc-group">
+				<div class="group-content">
+					<div class="group-title">Introduction</div>
+					<div class="group-desc">uvCharts is a JavaScript based charting library built using the famous d3.js library. uvCharts lets you skip all the tough learning and coding part involved with d3.js and yet build simple, robust, completely customisable charts on any page on the web with utmost ease.
+					</div>
+				</div>
+			</div>
+			
+			<div id="API" class="doc-group">
+				<div class="group-content">
+					<div class="group-title">API</div>
+					<div class="group-desc">
+					During the entire development phase, we wanted to make things easier and simpler for the end user and at the end we've managed to deliver something really amazing, a single function API. We call it the one function to rule them all (charts, we mean).
+						<div class="code-ex">var chartObject = uv.chart(chartType, graphDefinition, optionalConfiguration)</div>
+						
+						The function returns a uvChart object which exposes d3 selections so more adventurous users can harness the power of d3 even after the chart is created.
+					</div>
+				</div>
+			</div>
+			
+			<div id="charts" class="doc-group">
+				<div class="group-content">
+					<div class="group-title">Chart Types</div>
+					<div class="group-desc">
+						<p>A charting library is only as strong as the no.of Charts it supports and we currently support 12 with definite expansion plans on this front.</p>
+						<p>The first parameter of uv.chart is Charttype which defines the type of chart rendered by uvCharts. You'll have to pass in a chart type string as mentioned in the table below based on which type of chart you prefer to see your data in.</p>
+						<table class="charttypes">
+							<thead>
+								<tr><th>Chart Type</th><th>Key String</th></tr>
+							</thead>
+							<tbody>
+								<tr><td>Bar Chart</td><td>'Bar'</td></tr>
+								<tr><td>Line Chart</td><td>'Line'</td></tr>
+								<tr><td>Area Chart</td><td>'Area'</td></tr>
+								<tr><td>Stacked Bar Chart</td><td>'StackedBar'</td></tr>
+								<tr><td>Stacked Area Chart</td><td>'StackedArea'</td></tr>
+								<tr><td>Pie Chart</td><td>'Pie'</td></tr>
+								<tr><td>Percent Bar Chart</td><td>'PercentBar'</td></tr>
+								<tr><td>Percent Area Chart</td><td>'PercentArea'</td></tr>
+								<tr><td>Donut Chart</td><td>'Donut'</td></tr>
+								<tr><td>Step Up Bar Chart</td><td>'StepUpBar'</td></tr>
+								<tr><td>Polar Area Chart</td><td>'PolarArea'</td></tr>
+								<tr><td>Waterfall Chart</td><td>'Waterfall'</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div id="graphdef" class="doc-group">
+				<div class="group-content">
+					<div class="group-title">Graph Definition</div>
+					<div class="group-desc">
+					During the entire development phase, we wanted to make things easier and simpler for the end user and at the end we've managed to deliver something really amazing, a single function API. We call it the one function to rule them all (charts, we mean).
+						<div class="code-ex">var chartObject = uv.chart(chartType, graphDefinition, optionalConfiguration)</div>
+						
+						The function returns a uvChart object which exposes d3 selections so more adventurous users can harness the power of d3 even after the chart is created.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

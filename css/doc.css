@@ -1,0 +1,154 @@
+body {	
+	margin: 0;
+	font-family: "Noto Sans",Alef,Arial,"Noto Sans";
+}
+
+body > div {
+	min-height: 900px;
+	display: inline-block;
+}
+
+.doc-title, .doc-subtitle {
+	font-family: Exo;
+	text-align: center;
+}
+
+.doc-title {
+	padding-top: 15px;
+}
+
+.doc-subtitle {
+	padding-bottom: 20px;
+}
+
+.doc-nav-group {
+/*	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd*/
+	margin-bottom: 8px;
+	margin-left: 6px;
+	margin-right: 6px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.doc-nav-group a {
+	text-decoration: none;
+}
+
+.doc-nav-group a:visited {
+	text-decoration: none;
+}
+
+.doc-nav-header {
+	padding: 2px 12px;
+	background-color: #2b2c47;
+}
+
+.doc-nav-header a {
+	color: #f8f8f8;
+}
+
+.doc-nav-link {
+	padding: 2px 24px;
+	background-color: #e6e9fb;
+}
+
+.doc-nav-link a {
+	color: #000;
+}
+
+.main-links {
+	padding: 10px 0;
+	vertical-align: middle;
+}
+
+.main-links a {
+	text-decoration: none;
+	color: #2b2c47;
+}
+
+.doc-menu {
+	width: 12.5%;
+	background-color: #111;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.doc-content {
+	margin-left: 12.5%;
+	width: 87.5%;
+	padding: 10px 0;
+}
+
+.doc-content > div {
+	padding: 10px 20px;
+}
+
+.group-content > div {
+	padding: 3px 20px;
+	background-color: #E7EEFF;
+}
+
+div.group-title {
+	background-color: #2b2c47;
+	color: #eee;
+	font-weight: bold;
+}
+
+div.group-desc {
+	font-size: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.group-desc > div {
+	margin: 10px 0;
+}
+
+.group-desc > p {
+	margin: 6px 0;
+}
+
+.code-ex {
+	border-radius: 4px;
+	padding: 2px 10px;
+	font-family: Monaco, Consolas, "Ubuntu Mono","Droid Sans Mono";
+	background-color: #ddd;
+}
+
+.group-content {
+	border: 1px solid #444;
+}
+
+table.charttypes {
+	border-collapse: collapse;
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.charttypes th, .charttypes td {
+	border: 1px solid #666;
+	padding: 2px 8px;
+}
+
+.charttypes th {
+	background-color: #444;
+	color: #fff;
+}
+
+.charttypes tr:nth-child(odd) {
+	background-color: #F6F6F6;
+}
+
+.charttypes tr:nth-child(even) {
+	background-color: #f8f9fe;
+}
+
+.charttypes td:nth-child(1) {
+	text-align: right;
+}
+
+.charttypes td:nth-child(2) {
+	text-align: center;
+}
