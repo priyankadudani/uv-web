@@ -79,16 +79,24 @@ body {
 button.download {
 	font-size: 14px;
 	padding: 10px 14px;
-	background-color: #FF7F08;
 	color: #fff;
 	border: 1px solid #FF7F08;
 	border-radius: 2px;
 	box-shadow: 0px 0px 8px #999;
+	background: #ffa84c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+	
 }
 
 button.download:hover {
 	cursor: pointer;
-	box-shadow: 0px 0px 8px #eee;
+	box-shadow: 0px 0px 20px #ff9053;
 }
 
 .banner {
