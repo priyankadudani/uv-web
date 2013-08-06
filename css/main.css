@@ -79,9 +79,9 @@ body {
 button.download {
 	font-size: 14px;
 	padding: 10px 14px;
-	background-color: #0da403;
+	background-color: #FF7F08;
 	color: #fff;
-	border: 1px solid #0da403;
+	border: 1px solid #FF7F08;
 	border-radius: 2px;
 	box-shadow: 0px 0px 8px #999;
 }
@@ -203,9 +203,13 @@ button.download:hover {
 }
 
 .highlight {
+	border-radius: 25px;
+	border: 1px solid #999;
 	display: inline-block;
 	width: 30%;
-	padding: 10px;
+	padding: 15px 10px;
+	margin: 0 3px;
+	background-color: #FFF;
 }
 
 .highlight .ht-header {
@@ -216,6 +220,10 @@ button.download:hover {
 	color: #ff9053;
 	padding: 5px 0;
 	padding-top: 10px;
+}
+
+.highlight .ht-image {
+	text-align: center;
 }
 
 .highlight .ht-summary {
