@@ -77,7 +77,8 @@ body > div {
 	position: fixed;
 	left: 0;
 	top: 0;
-	border-right: 3px solid #ff7b0d;;
+	border-right: 3px solid #ff7b0d;
+	box-shadow: 0 3px 6px #222;
 }
 
 .doc-content {
