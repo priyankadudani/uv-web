@@ -6,18 +6,25 @@ $(function () {
 		},
 		margin : {
 				top : 40,
-				bottom : 60,
+				bottom : 80,
 				left : 100,
-				right : 100
+				right : 40
 		},
 		meta : {
 			isDownload : false
+		},
+		frame : {
+			bgcolor: '#FFF3ED'		
+		},
+		graph : {
+			background: 'none'
 		}
 	};
 	
 	var verConfig = {
 		graph : {
-			orientation : 'Vertical'
+			orientation : 'Vertical',
+			background: 'none'
 		},
 		dimension : {width : 500,
 			height : 350
@@ -26,10 +33,13 @@ $(function () {
 				top : 40,
 				bottom : 60,
 				left : 100,
-				right : 100
+				right : 120
 		},
 		meta : {
 			isDownload : false
+		},
+		frame : {
+			bgcolor : '#FFF3ED'
 		}
 	};
 	
