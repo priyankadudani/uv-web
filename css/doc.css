@@ -9,7 +9,7 @@ body > div {
 }
 
 .doc-title, .doc-subtitle {
-	font-family: Exo;
+	font-family: "Source Sans Pro";
 	text-align: center;
 }
 
@@ -32,6 +32,7 @@ body > div {
 
 .doc-nav-group a {
 	text-decoration: none;
+	font-family: "Cabin Condensed";
 }
 
 .doc-nav-group a:visited {
@@ -124,7 +125,7 @@ div.group-desc {
 
 .code-ex {
 	border-radius: 4px;
-	padding: 2px 10px;
+	padding: 4px 10px;
 	font-family: Monaco, Consolas, "Ubuntu Mono","Droid Sans Mono";
 	background-color: #ddd;
 }
