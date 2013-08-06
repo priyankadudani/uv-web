@@ -12,6 +12,15 @@ body {
 	margin: 0 auto;
 }
 
+.slider-container {
+	width: 960px;
+	height: 500px;
+}
+
+#slides {
+    display: none;
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -19,6 +28,7 @@ body {
 	background-color: #000;
 	border-bottom: 2px solid #ff9053;
 	box-shadow: 0px 2px 2px #999;
+	z-index: 100;
 }
 
 .logo {
@@ -31,7 +41,6 @@ body {
 	color: #fff;
 	cursor: pointer;
 }
-
 
 .logo span:last-child {
 	color: #ff9053;
@@ -71,7 +80,7 @@ body {
 	border-top: 4px solid #ff9053;
 	border-bottom: 1px solid #ff9053;
 	margin-top: 50px;
-	font-size: 10px;
+	font-size: 11px;
 	color: #737373;
 }
 
@@ -83,10 +92,34 @@ body {
 	margin-right: 16px;
 }
 
+.graphs {
+	padding: 0 10px 
+}
+
 .graphs > div {
-	width: 100%;
 //height: 400px;
 }
+
+#uv-graph-space1{
+	text-align: left;
+}
+
+#uv-graph-space2{
+	text-align: right;
+}
+
+#uv-graph-space13{
+	text-align: left;
+}
+
+#uv-graph-space4{
+	text-align: right;
+}
+
+#uv-graph-space5{
+	text-align: left;
+}
+
 
 .rf {
 	float: right;
@@ -219,9 +252,10 @@ body {
 	padding: 1px 0;
 }
 
-.block-link a{
-	font-size: 13px;
-	color: #DDD;
+.block-link a {
+	font-size: 11px;
+	color: #fff;
+	font-weight: bold;
 	padding: 1px 0;
 	text-decoration:none;
 }
@@ -245,6 +279,66 @@ body {
 	padding-bottom: 1px;
 }
 
+.feature-request {
+	width: 80%;
+	margin: 0 auto;
+}
+
 a:visited {
 	color: #FFF;
-};
+}
+
+.icon-chevron-left {
+	height: 17px;
+	cursor: pointer;
+}
+
+.icon-chevron-right {
+	height: 17px;
+	cursor: pointer;
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../images/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
