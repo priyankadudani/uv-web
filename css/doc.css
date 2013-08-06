@@ -1,0 +1,182 @@
+body {	
+	margin: 0;
+	font-family: "Noto Sans",Alef,Arial,"Noto Sans";
+}
+
+body > div {
+	min-height: 900px;
+	display: inline-block;
+}
+
+.doc-title, .doc-subtitle {
+	font-family: "Source Sans Pro";
+	text-align: center;
+}
+
+.doc-title {
+	padding-top: 15px;
+}
+
+.doc-subtitle {
+	padding-bottom: 20px;
+}
+
+.doc-nav-group {
+/*	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd*/
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.doc-nav-group a {
+	text-decoration: none;
+	font-family: "Cabin Condensed";
+}
+
+.doc-nav-group a:visited {
+	text-decoration: none;
+}
+
+.doc-nav-header {
+	padding: 2px 12px;
+	background-color: #2b2c47;
+}
+
+.doc-nav-header a {
+	color: #f8f8f8;
+	font-size: 15px;
+}
+
+.doc-nav-link {
+	padding: 2px 24px;
+	background-color: #E7EEFF;
+}
+
+.doc-nav-link a {
+	color: #000;
+	font-size: 13px;
+}
+
+.main-links {
+	padding: 10px 0;
+	vertical-align: middle;
+}
+
+.main-links a {
+	text-decoration: none;
+	color: #2b2c47;
+}
+
+.doc-menu {
+	min-width: 100px;
+	width: 12.5%;
+	background-color: #2C3C6D;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.doc-content {
+	margin-left: 12.5%;
+	width: 87.5%;
+	padding: 10px 0;
+}
+
+.doc-content > div {
+	padding: 10px 20px;
+}
+
+.group-content > div {
+	padding: 3px 20px;
+	background-color: #E7EEFF;
+}
+
+div.group-title {
+	background-color: #2b2c47;
+	color: #eee;
+	font-weight: bold;
+}
+
+div.group-desc {
+	font-size: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.group-desc > div {
+	margin: 10px 0;
+}
+
+.group-desc > p {
+	margin: 6px 0;
+}
+
+.subgroup-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.main-links a {
+	color: #356AA0;
+}
+
+.code-ex {
+	border-radius: 4px;
+	padding: 4px 10px;
+	font-family: Monaco, Consolas, "Ubuntu Mono","Droid Sans Mono";
+	background-color: #ddd;
+}
+
+.group-content {
+	border: 1px solid #444;
+}
+
+table.charttypes {
+	border-collapse: collapse;
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.charttypes th, .charttypes td {
+	border: 1px solid #666;
+	padding: 2px 8px;
+}
+
+.charttypes th {
+	background-color: #444;
+	color: #fff;
+}
+
+.charttypes tr:nth-child(odd) {
+	background-color: #F6F6F6;
+}
+
+.charttypes tr:nth-child(even) {
+	background-color: #f8f9fe;
+}
+
+.charttypes td:nth-child(1) {
+	text-align: right;
+}
+
+.charttypes td:nth-child(2) {
+	text-align: center;
+}
+
+.social-bar {
+	background-color: #2C3C6D;
+	width: 12.5%;
+	min-width: 100px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 6px 0;
+}
+
+.social-bar img {
+	width: 32px;
+	height: 32px;
+}
