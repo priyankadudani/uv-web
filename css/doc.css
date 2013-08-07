@@ -41,7 +41,7 @@ body > div {
 
 .doc-nav-header {
 	padding: 2px 12px;
-	background-color: #2b2c47;
+	background-color: #ff7b0d;
 }
 
 .doc-nav-header a {
@@ -51,7 +51,7 @@ body > div {
 
 .doc-nav-link {
 	padding: 2px 24px;
-	background-color: #E7EEFF;
+	background-color: #FFF7F4;
 }
 
 .doc-nav-link a {
@@ -72,11 +72,13 @@ body > div {
 .doc-menu {
 	min-width: 100px;
 	width: 12.5%;
-	background-color: #2C3C6D;
+	background-color: #454545;
 	color: #fff;
 	position: fixed;
 	left: 0;
 	top: 0;
+	border-right: 3px solid #ff7b0d;
+	box-shadow: 0 3px 6px #222;
 }
 
 .doc-content {
@@ -91,11 +93,11 @@ body > div {
 
 .group-content > div {
 	padding: 3px 20px;
-	background-color: #E7EEFF;
+	background-color: #FFF7F4;
 }
 
 div.group-title {
-	background-color: #2b2c47;
+	background-color: #ff7b0d;
 	color: #eee;
 	font-weight: bold;
 }
@@ -120,13 +122,13 @@ div.group-desc {
 }
 
 .main-links a {
-	color: #356AA0;
+	color: #FA1C1C;
 }
 
 .code-ex {
 	border-radius: 4px;
 	padding: 4px 10px;
-	font-family: Monaco, Consolas, "Ubuntu Mono","Droid Sans Mono";
+	font-family: Consolas, Monaco, "Ubuntu Mono","Droid Sans Mono";
 	background-color: #ddd;
 }
 
@@ -167,7 +169,7 @@ table.charttypes {
 }
 
 .social-bar {
-	background-color: #2C3C6D;
+	background-color: #454545;
 	width: 12.5%;
 	min-width: 100px;
 	position: fixed;
