@@ -62,7 +62,7 @@
 					
 					<div class="doc-nav-group">
 						<div class="doc-nav-header">
-							<a href="#graphdef">Configuration</a>
+							<a href="#configuration">Configuration</a>
 						</div>
 						<div class="doc-nav-link">
 							<a href="#config-graph">graph</a>
@@ -228,7 +228,42 @@
 				<div class="group-content">
 					<div class="group-title">Configuration</div>
 					<div class="group-desc">
-						
+						<p> The third parameter, Configuration, is optional yet an important parameter because inside it lies the entire ability to customise the chart from the colors used to the font size, styles, padding and more.</p>
+						<p>Configuration is a plain JavaScript object with group-like sub-objects which segregate the various configurable properties.</p>
+						<p>The structure of a configuration is like:</p>
+<div class="code-ex">
+<pre>var config = <strong>{
+	groupname1 : {
+		property1 : value1,
+		property2 : value2,
+		property3 : value3
+	},
+	
+	groupname2 : {
+		property4 : value4,
+		property5 : value5
+	}
+}</strong></pre>
+						</div>
+						<div class="config-details">
+							<div class="config-group">
+								<div class="config-group-title">graph</div>
+								<div class="config-group-desc">
+									<p>All general properties related to the chart are put up in this group.</p>
+								</div>
+								<div class="config-group-content">
+									<div class="prop-group">
+										<div class="prop-group-title">palette</div>
+										<div class="prop-group-info">
+											<strong>Type:</strong> String | <strong>Default:</strong> 'Brink'
+										</div>
+										<div class="prop-group-desc">
+											<p>This defines the color palette/set of colors used to color the graph. There are a set of palettes to choose from within uvCharts. You can override it with your own palette using <strong>custompalette</strong></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

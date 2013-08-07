@@ -138,7 +138,7 @@ div.group-desc {
 }
 
 .group-desc > p {
-	margin: 6px 0;
+	/*margin: 6px 0;*/
 }
 
 .subgroup-title {
@@ -169,6 +169,22 @@ pre {
 
 .group-content {
 
+}
+
+.config-group {
+	margin: 6px 0;
+}
+
+.config-group-title {
+	color: #1a99aa;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.prop-group-title {
+	color: #ff7c00;
+	font-size: 16px;
+	margin: 8px 0;
 }
 
 table.charttypes {
