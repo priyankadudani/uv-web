@@ -67,6 +67,7 @@ body {
 	color: #AAA;
 	padding: 14px 12px;
 	border-top: 2px solid #2b2b2b;
+	font-family: "Cabin Condensed"
 	/*border-bottom: 2px solid #47494d;*/
 }
 
@@ -115,7 +116,7 @@ button.download:hover {
 
 .graphs {
 	margin-top: 56px;
-	padding: 15px 10px;
+	padding: 15px 0;
 	background-color: #fff;
 }
 
@@ -249,8 +250,14 @@ button.download:hover {
 	background-color: #333;
 }
 
+.footer a {
+	font-family: "Cabin Condensed";
+}
+
 .footer-links {
-	padding: 5px 0;
+	margin: 8px 4px;
+	border-right: 2px solid #888;
+	display: inline-block;
 }
 
 .link-block > div {
@@ -259,7 +266,7 @@ button.download:hover {
 
 .link-block {
 	vertical-align: top;	
-	width: 24%;
+	width: 180px;
 	display: inline-block;
 	padding: 5px 0;
 }
@@ -296,14 +303,17 @@ button.download:hover {
 	color: #FF5C00;
 }
 
+.copyright {
+	border-top: 1px dotted #555;
+	padding: 10px 0;
+}
+
 .copyright-notice {
 	text-align: center;
 	vertical-align: middle;
 	font-family: "Noto Sans";
 	font-size: 11px;
 	color: #777;
-	padding: 10px 0;
-	border-top: 1px dotted #555;
 }
 
 .copyright-notice a {
@@ -311,8 +321,8 @@ button.download:hover {
 }
 
 .follow-us img {
-	width: 36px;
-	height: 36px;
+	width: 24px;
+	height: 24px;
 }
 
 .features-list li {
@@ -323,6 +333,11 @@ button.download:hover {
 .feature-request {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.feature-request a {
+	color: #fafafa;
+	text-decoration: none;
 }
 
 .icon-chevron-left {
