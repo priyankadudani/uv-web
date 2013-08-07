@@ -25,25 +25,26 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #000;
+	background-color: #2b2b2b;
 	border-bottom: 2px solid #ff9053;
-	box-shadow: 0px 2px 2px #999;
+	/* box-shadow: 0px 2px 2px #999; */
 	z-index: 100;
 }
 
 .logo {
-	font-size: 31px;
+	font-size: 40px;
 	font-family: Arial;
-	padding: 7px 8px;
+	padding: 4px 14px;
 }
+
 .logo span:first-child {
-	font-size: 25px;
-	color: #fff;
+	font-size: 30px;
+	color: #1a99aa;
 	cursor: pointer;
 }
 
 .logo span:last-child {
-	color: #ff9053;
+	color: #FF5C00;
 	margin-left: -9px;
 	cursor: pointer;
 }
@@ -58,45 +59,44 @@ body {
 
 .nav li {
 	display: inline-block;
-	width: 100px;
 	text-align: center;
 }
 
 .nav li a {
 	text-decoration: none;
-	color: #ffffff;
-	width: 100px;
+	color: #AAA;
 	padding: 14px 12px;
-	border-top: 2px solid #47494d;
+	border-top: 2px solid #2b2b2b;
+	font-family: "Cabin Condensed"
 	/*border-bottom: 2px solid #47494d;*/
 }
 
 .nav ul a:hover {
-	color: #ff9053;
-	border-top: 2px solid #ff9053;
+	color: #FF5C00;
+	border-top: 2px solid #FF5C00;
 }
 
 button.download {
+	margin-left: 10px;
 	font-size: 14px;
 	padding: 10px 14px;
 	color: #fff;
 	border: 1px solid #FF7F08;
 	border-radius: 2px;
-	box-shadow: 0px 0px 8px #999;
 	background: #ffa84c; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  #ffa84c 0%, #FF5C00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#FF5C00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffa84c 0%,#FF5C00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffa84c 0%,#FF5C00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffa84c 0%,#FF5C00 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffa84c 0%,#FF5C00 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#FF5C00',GradientType=0 ); /* IE6-9 */
 	
 }
 
 button.download:hover {
 	cursor: pointer;
-	box-shadow: 0px 0px 20px #ff9053;
+	box-shadow: 0px 0px 10px #ff9053;
 }
 
 .banner {
@@ -115,7 +115,8 @@ button.download:hover {
 }
 
 .graphs {
-	padding: 15px 10px;
+	margin-top: 56px;
+	padding: 15px 0;
 	background-color: #fff;
 }
 
@@ -246,11 +247,17 @@ button.download:hover {
 }
 
 .footer {
-	background-color: #222;
+	background-color: #333;
+}
+
+.footer a {
+	font-family: "Cabin Condensed";
 }
 
 .footer-links {
-	padding: 5px 0;
+	margin: 8px 4px;
+	border-right: 2px solid #888;
+	display: inline-block;
 }
 
 .link-block > div {
@@ -259,14 +266,14 @@ button.download:hover {
 
 .link-block {
 	vertical-align: top;	
-	width: 24%;
+	width: 180px;
 	display: inline-block;
 	padding: 5px 0;
 }
 
 .block-header {
 	font-size: 15px;
-	color: #EEE;
+	color: #1a99aa;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding-bottom: 8px;
@@ -286,10 +293,19 @@ button.download:hover {
 
 .block-link a {
 	font-size: 11px;
-	color: #fff;
+	color: #aaa;
 	font-weight: bold;
 	padding: 1px 0;
 	text-decoration:none;
+}
+
+.block-link a:hover {
+	color: #FF5C00;
+}
+
+.copyright {
+	border-top: 1px dotted #555;
+	padding: 10px 0;
 }
 
 .copyright-notice {
@@ -297,13 +313,16 @@ button.download:hover {
 	vertical-align: middle;
 	font-family: "Noto Sans";
 	font-size: 11px;
-	color: #EEE;
-	padding: 10px 0;
+	color: #777;
+}
+
+.copyright-notice a {
+	color: #aaa;
 }
 
 .follow-us img {
-	width: 36px;
-	height: 36px;
+	width: 24px;
+	height: 24px;
 }
 
 .features-list li {
@@ -316,8 +335,9 @@ button.download:hover {
 	margin: 0 auto;
 }
 
-a:visited {
-	color: #FFF;
+.feature-request a {
+	color: #fafafa;
+	text-decoration: none;
 }
 
 .icon-chevron-left {
