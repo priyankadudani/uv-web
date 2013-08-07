@@ -54,12 +54,17 @@ $(function () {
 	horConfig.meta.position = '#uv-graph-space3';
 	uv.chart('Area', new demo.Graphdef, horConfig);
 	
-	verConfig.graph.palette = 'New Moon';
+	verConfig.graph.palette = 'Nature';
 	verConfig.meta.position = '#uv-graph-space4';
-	uv.chart('Pie', new demo.Graphdef, verConfig);
+	verConfig.meta.caption = 'Top Languages at Github';
+	verConfig.label = {suffix : '%'};
+	verConfig.caption = {fontvariant : 'none'};
+	uv.chart('Pie', new demo.GithubLanguagesData, verConfig);
 
 	verConfig.graph.palette = 'Sea';
 	verConfig.meta.position = '#uv-graph-space5';
-	verConfig.legend= {position : 'bottom'};
+	verConfig.legend = {position : 'bottom'};
+	verConfig.label = {suffix : ''};
+	verConfig.meta.caption = '';
 	uv.chart('Waterfall', new demo.Graphdef, verConfig);
 });
