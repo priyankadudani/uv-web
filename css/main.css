@@ -122,26 +122,9 @@ button.download:hover {
 .graphs > div {
 }
 
-#uv-graph-space1{
-	text-align: left;
-}
-
-#uv-graph-space2{
+.uv-graph-space >div{
 	text-align: right;
 }
-
-#uv-graph-space13{
-	text-align: left;
-}
-
-#uv-graph-space4{
-	text-align: right;
-}
-
-#uv-graph-space5{
-	text-align: left;
-}
-
 
 .rf {
 	float: right;
@@ -205,9 +188,21 @@ button.download:hover {
 	-ms-transform: rotateY(180deg);
 }
 
+.feature-box > div{
+	display: inline-block;
+}
+
 .highlights {
+	width: 65%;
 	background-color: #FFF9F9;
 	padding: 12px 0;
+	//position: fixed;
+}
+
+.features {
+	width: 33.3%;
+	padding: 10px 0;
+	vertical-align: top;
 }
 
 .highlight {
@@ -241,6 +236,7 @@ button.download:hover {
 	padding: 5px 10px;
 	color: #333;
 }
+
 
 .features-list:after {
 	text-align: center;
