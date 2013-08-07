@@ -42,6 +42,25 @@ demo.Graphdef = function(){
 	return this;
 };
 
+demo.GithubLanguagesData = function(){
+	this.categories = ['language'];
+	this.dataset = {
+		'language' : [
+			{name: 'Ruby', value: 12 },
+			{name: 'javascript', value: 21 },
+			{name: 'Java', value: 8 },
+			{name: 'Shell', value: 8 },
+			{name: 'Python', value: 8 },
+			{name: 'PHP', value: 7 },
+			{name: 'C', value: 6 },
+			{name: 'C++', value: 5 },
+			{name: 'Perl', value: 4 },
+			{name: 'CoffeeScript', value: 3 }
+		]
+	};
+	return this;
+};
+
 demo.WaterfallGraphdef = function() {
 	this.categories = ['data'];
 	this.dataset = {
