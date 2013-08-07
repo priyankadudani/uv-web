@@ -45,6 +45,11 @@ body > div {
 	padding: 2px 12px;
 	background-color: #2b2b2b;
 	border-left: 4px solid #2b2b2b;
+	-webkit-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	-moz-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	-o-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	-ms-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
 }
 
 .doc-nav-header a {
@@ -56,6 +61,11 @@ body > div {
 	padding: 2px 24px;
 	background-color: #2b2b2b;
 	border-left: 4px solid #2b2b2b;
+	-webkit-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	-moz-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	-o-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	-ms-transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
+	transition: border-color 200ms linear 0s,border-color 200ms linear 0s;
 }
 
 .doc-nav-header:hover, .doc-nav-link:hover {
