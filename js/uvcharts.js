@@ -106,7 +106,7 @@ uv.Graph.prototype.setDownloadOptions = function () {
 		.style('font-family', self.config.caption.fontfamily)
 		.style('font-size', '12')
 		.style('cursor', self.config.caption.cursor)
-		.style('stroke', self.config.caption.stroke)
+		.style('stroke', self.config.caption.strokecolor)
 		.style('text-decoration', 'underline')
 		.on('mouseover', function() {
 			var dnldBtn = d3.select(this);
@@ -388,7 +388,7 @@ uv.Graph.prototype.drawHorizontalAxis = function () {
 	
 	self.axes.hor.label = self.axes.hor.group.append('g')
 														.classed(uv.constants.classes.axeslabelgroup, true)
-														.attr('transform', 'translate(' + self.width()/2 + ',' + (1*self.config.margin.bottom/4 + 1*self.config.label.fontsize) + ')');
+														.attr('transform', 'translate(' + self.width()/2 + ',' + (1*self.config.margin.bottom/2 + 1*self.config.label.fontsize) + ')');
 								
 	self.axes.hor.label.append('text')
 								.attr('display','block')

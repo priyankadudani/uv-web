@@ -51,8 +51,8 @@ $(function () {
 	verConfig.legend= {position : 'right'};
 	uv.chart('Line', new demo.Graphdef, verConfig);
 	
-	horConfig.meta.position = '#uv-graph-space3';
-	uv.chart('Area', new demo.Graphdef, horConfig);
+	browser_wars_config.meta.position = '#uv-graph-space3';
+	uv.chart('PercentArea', browser_wars_data, browser_wars_config);
 	
 	verConfig.graph.palette = 'Nature';
 	verConfig.meta.position = '#uv-graph-space4';
