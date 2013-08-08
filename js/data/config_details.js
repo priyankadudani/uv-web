@@ -1,6 +1,8 @@
 var uvcs = {
 	color : 'Color String/Color Hex Code',
-	ccode : 'any Color Code or Color String or "none"'
+	ccode : 'any Color Code or Color String or "none"',
+	fcode : 'any font',
+	scode : "'linear'|'log'|'pow'|'sqrt'"
 };
 
 var details = {
@@ -62,16 +64,53 @@ var details = {
 
 	axis : {
 		id : 'config-axis',
-		desc : 'All properties related to the chart margins go in here',
+		desc : 'All properties related to the axes go in here',
 		properties : [
 			{ name : 'ticks', type : "Number", default : "8", range: '0 or above', desc : 'No.of major ticks on the measure axis'},
 			{ name : 'subticks', type : 'Number', default : '2', range: '0 or above', desc : 'No.of minor ticks on the measure axis'},
 			{ name : 'padding', type : "Size", default : "5", range: 'Any CSS Size', desc : 'Padding from the axis to the label'},
 			{ name : 'minor', type : 'Size', default : '-10', range: '0 or less', desc : 'Length of the minor ticks towards the label'},
 			{ name : 'strokecolor', type : uvcs.color, default : "#000000", range: uvcs.ccode, desc : 'Color of axis lines'},
-			{ name : 'subticks', type : 'Number', default : '2', range: '0 or above', desc : 'No.of minor ticks on the measure axis'},
-			{ name : 'padding', type : "Size", default : "5", range: 'Any CSS Size', desc : 'Padding from the axis to the label'},
-			{ name : 'minor', type : 'Size', default : '-10', range: '0 or less', desc : 'Length of the minor ticks towards the label'}
+			{ name : 'fontfamily', type : 'String', default : '"Arial"', range: uvcs.fcode, desc : 'Font used to display numbers on the axis'},
+			{ name : 'fontsize', type : "Size", default : "11", range: '0 or above', desc : 'Font size of the font used on the axis'},
+			{ name : 'fontweight', type : 'String', default : 'bold', range: 'normal|weight', desc : 'Font weight'},
+			{ name : 'showticks', type : 'Boolean', default : 'true', range: 'true/false', desc : 'Show ticks flag'},
+			{ name : 'showsubticks', type : "Boolean", default : "true", range: 'true/false', desc : 'Show subticks flag'},
+			{ name : 'showtext', type : 'Boolean', default : 'true', range: 'true/false', desc : 'Show text flag'}
 		]
-	}
+	},
+
+	label : {
+		id : 'config-label',
+		desc : 'All properties related to labels on the axis',
+		properties : [
+			{ name : 'fontfamily', type : 'String', default : '"Arial"', range: uvcs.fcode, desc : 'Font used to display labels on the axis'},
+			{ name : 'fontsize', type : "Size", default : "11", range: '0 or above', desc : 'Font size of the font used on the labels'},
+			{ name : 'fontweight', type : 'String', default : 'normal', range: 'normal|weight', desc : 'Font weight'},
+			{ name : 'strokecolor', type : uvcs.color, default : "#000000", range: uvcs.ccode, desc : 'Color of axis lines'},
+			{ name : 'showlabel', type : 'Boolean', default : 'true', range: 'true/false', desc : 'Show Labels flag'},
+			{ name : 'precision', type : 'Number', default : '2', range: '0 or above', desc : 'Precision on the labels in case of decimal values'},
+			{ name : 'prefix', type : "String", default : "''", range: 'Any String', desc : 'Any prefix which needs to be added to the label'},
+			{ name : 'suffix', type : 'String', default : "''", range: 'Any String', desc : 'Any suffix which needs to be added to the label'}
+		]
+	},
+
+	scale : {
+		id : 'config-scale',
+		desc : 'All properties related to scale used on the values',
+		properties : [
+			{ name : 'type', type : 'String', default : '"linear"', range: uvcs.scode, desc : 'Scale used to represent values on the chart'},
+			{ name : 'ordinality', type : "Decimal", default : "0.2", range: '0-1', desc : 'Defines the gap between 2 consecutive labels'}
+		]
+	},
+
+	tooltip : {
+		id : 'config-tooltip',
+		desc : 'All properties related to tooltip shown on hovering over an data element',
+		properties : [
+			{ name : 'show', type : 'Boolean', default : 'true', range: 'true/false', desc : 'Flag to enable or disable tooltip functionality'},
+			{ name : 'format', type : "String", default : "%c [%l] : %v", range: 'String with %c, %l, %v', desc : 'Defines custom format for tooltip'}
+		]
+	},
+
 };

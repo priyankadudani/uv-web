@@ -1,5 +1,7 @@
 $( function () {
-	var container = $('.config-details');
+	var container = $('.config-details'),
+			$window = $(window),
+			$footer = $('.footer');
 
 	$.each(details, function (key, value) {
 		var configGroup = $('<div class="config-group" />').attr('id', value.id);
@@ -23,4 +25,14 @@ $( function () {
 		container.append(configGroup);
 	});
 
+	$window.scroll( function (e) {
+		var footerTop = $footer.position().top,
+				menuHeight = $('.doc-menu').height();
+
+		if ( +menuHeight + 94 + $window.scrollTop() >= footerTop ) {
+			$('.doc-menu').hide();
+		} else {
+			$('.doc-menu').show();
+		}
+	});
 });
