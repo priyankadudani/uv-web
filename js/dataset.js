@@ -1,42 +1,33 @@
 var demo = {};
 
 demo.Graphdef = function(){
-	this.categories = ['IE', 'Chrome', 'Opera', 'Safari'];
+	this.categories = ['Gold','Silver','Bronze'];
 	this.dataset = {
-		'IE' : [
-			{name: '2001', value: 60 },
-			{name: '2002', value: 70 },
-			{name: '2003', value: 80 },
-			{name: '2004', value: 90 },
-			{name: '2005', value: 20 }
+		'Gold' : [
+			{name: 'USA', value: 1077 },
+			{name: 'URS', value: 473 },
+			{name: 'GER', value: 293 },
+			{name: 'GBR', value: 255 },
+			{name: 'FRA', value: 249 },
+			{name: 'ITA', value: 248 }
 		],
-		'Chrome' : [
-			{name: '2001', value: 10},
-			{name: '2002', value: 30},
-			{name: '2003', value: 50},
-			{name: '2004', value: 90},
-			{name: '2005', value: 70}
+
+		'Silver' : [
+			{name: 'USA', value: 860 },
+			{name: 'URS', value: 376 },
+			{name: 'GER', value: 328 },
+			{name: 'GBR', value: 293 },
+			{name: 'FRA', value: 262 },
+			{name: 'ITA', value: 211 }
 		],
-		'Firefox': [
-			{name: '2001', value: 50},
-			{name: '2002', value: 150},
-			{name: '2003', value: 20},
-			{name: '2004', value: 80},
-			{name: '2005', value: 40}
-		],
-		'Opera': [
-			{name: '2001', value: 90},
-			{name: '2002', value: 60},
-			{name: '2003', value: 30},
-			{name: '2004', value: 10},
-			{name: '2005', value: 70}
-		],
-		'Safari' : [
-			{name: '2001', value: 30},
-			{name: '2002', value: 10},
-			{name: '2003', value: 60},
-			{name: '2004', value: 90},
-			{name: '2005', value: 40}
+
+		'Bronze' : [
+			{name: 'USA', value: 742 },
+			{name: 'URS', value: 355 },
+			{name: 'GER', value: 320 },
+			{name: 'GBR', value: 288 },
+			{name: 'FRA', value: 310 },
+			{name: 'ITA', value: 227 }
 		]
 	};
 	return this;

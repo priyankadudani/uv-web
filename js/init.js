@@ -42,11 +42,13 @@ $(function () {
 			bgcolor : '#FFF3ED'
 		}
 	};
-	
+	horConfig.graph.custompalette = ['gold','silver','#665D1E'];
 	horConfig.meta.position = '#uv-graph-space1';
-	uv.chart('Bar', new demo.Graphdef, horConfig);
+	horConfig.meta.caption = "Top 6 Medal Winners of Olympic Games"
+	uv.chart('StackedBar', new demo.Graphdef, horConfig);
 	
-	verConfig.graph.palette = 'Bright';
+	//verConfig.graph.palette = 'Bright';
+	verConfig.graph.custompalette = ['#A6CEE3','#1F78B4','#B2DF8A','#33A02C','#FB9A99','#E31A1C','#FDBF6F','#FF7F00','#CAB2D6','#6A3D9A'];
 	verConfig.meta.position = '#uv-graph-space2';
 	verConfig.legend= {position : 'right'};
 	uv.chart('Line', new demo.Graphdef, verConfig);
@@ -54,14 +56,16 @@ $(function () {
 	horConfig.meta.position = '#uv-graph-space3';
 	uv.chart('Area', new demo.Graphdef, horConfig);
 	
-	verConfig.graph.palette = 'Nature';
+	//verConfig.graph.palette = 'Nature';
+	verConfig.graph.custompalette = ['#A6CEE3','#1F78B4','#B2DF8A','#33A02C','#FB9A99','#E31A1C','#FDBF6F','#FF7F00','#CAB2D6','#6A3D9A'];
 	verConfig.meta.position = '#uv-graph-space4';
 	verConfig.meta.caption = 'Top Languages at Github';
 	verConfig.label = {suffix : '%'};
 	verConfig.caption = {fontvariant : 'none'};
 	uv.chart('Pie', new demo.GithubLanguagesData, verConfig);
 
-	verConfig.graph.palette = 'Sea';
+	//verConfig.graph.palette = 'Sea';
+	verConfig.graph.custompalette = ['#A6CEE3','#1F78B4','#B2DF8A','#33A02C','#FB9A99','#E31A1C','#FDBF6F','#FF7F00','#CAB2D6','#6A3D9A'];
 	verConfig.meta.position = '#uv-graph-space5';
 	verConfig.legend = {position : 'bottom'};
 	verConfig.label = {suffix : ''};
