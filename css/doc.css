@@ -57,6 +57,10 @@ body > div {
 	font-size: 18px;
 }
 
+.doc-nav-header.active, .doc-nav-link.active {
+	border-left: 4px solid #FF5C00;
+}
+
 .doc-nav-link {
 	padding: 2px 24px;
 	background-color: #2b2b2b;
@@ -69,7 +73,7 @@ body > div {
 }
 
 .doc-nav-header:hover, .doc-nav-link:hover {
-	border-left: 4px solid #FF5C00;
+	border-left: 4px solid #1a99aa;
 }
 
 .doc-nav-link a {

@@ -27,12 +27,36 @@ $( function () {
 
 	$window.scroll( function (e) {
 		var footerTop = $footer.position().top,
-				menuHeight = $('.doc-menu').height();
+				docMenu = $('.doc-menu'),
+				menuHeight = docMenu.height();
 
 		if ( +menuHeight + 94 + $window.scrollTop() >= footerTop ) {
 			$('.doc-menu').hide();
 		} else {
 			$('.doc-menu').show();
 		}
+
+		$('.doc-group, .config-group, .doc-subgroup').each( function () {
+			var elmt = $(this),
+					navId = elmt.attr('id'),
+					top = elmt.position().top,
+					height = elmt.height(),
+					scrollDistance = $window.scrollTop() + 10;
+
+			if (scrollDistance >= top && scrollDistance < top + height) {
+				docMenu.find('.doc-nav-link, .doc-nav-header').removeClass('active');
+				docMenu.find('a[href="#' + navId + '"]').closest('.doc-nav-link, .doc-nav-header').addClass('active');
+			}
+		});
+	});
+
+	$('.doc-menu').find('a').off('click').on('click', function (e) {
+		e.preventDefault();
+
+		var elmtId = $(this).attr('href'),
+				elmt = $(elmtId);
+
+		var top = elmt.position().top;
+		window.scrollTo(0, +top );
 	});
 });
