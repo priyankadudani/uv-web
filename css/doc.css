@@ -1,6 +1,6 @@
 body {	
 	margin: 0;
-	font-family: "Noto Sans",Alef,Arial,"Noto Sans";
+	font-family: Helvetica, 'Arial';
 }
 
 body > div {
@@ -93,7 +93,7 @@ body > div {
 	background-color: #2B2B2B;
 	color: #fff;
 	position: fixed;
-	top: 75px;
+	top: 64px;
 	box-shadow: 0 3px 10px #222;
 	display: inline-block;
 	padding: 15px 0;
@@ -123,6 +123,7 @@ div.group-title {
 	color: #FF5C00;
 	font-size: 20px;
 	font-weight: bold;
+	font-family: 'Lucida Grande', sans-serif;
 }
 
 div.group-desc {
@@ -137,7 +138,7 @@ div.group-desc {
 }
 
 .group-desc > p {
-	margin: 6px 0;
+	/*margin: 6px 0;*/
 }
 
 .subgroup-title {
@@ -155,14 +156,35 @@ div.group-desc {
 	padding: 4px 10px;
 	font-family: Consolas, Monaco, "Ubuntu Mono","Droid Sans Mono";
 	background-color: rgba(26, 153, 170, 0.13);
+	margin: 10px 0;
 }
 
 pre {
 	font-family : Consolas, Monaco, "Ubuntu Mono", "Droid Sans Mono", Monospace;
+	font-size: 0.9em;
+	tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
 }
 
 .group-content {
 
+}
+
+.config-group {
+	margin: 6px 0;
+}
+
+.config-group-title {
+	color: #1a99aa;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.prop-group-title {
+	color: #ff7c00;
+	font-size: 16px;
+	margin: 8px 0;
 }
 
 table.charttypes {
@@ -172,13 +194,14 @@ table.charttypes {
 }
 
 .charttypes th, .charttypes td {
-	border: 1px solid #666;
-	padding: 2px 8px;
+	border: 1px solid #AAA;
+	padding: 8px 10px;
 }
 
 .charttypes th {
 	background-color: #444;
 	color: #fff;
+	font-weight: bold;
 }
 
 .charttypes tr:nth-child(odd) {
@@ -191,10 +214,11 @@ table.charttypes {
 
 .charttypes td:nth-child(1) {
 	text-align: right;
+	font-weight: bold;
 }
 
 .charttypes td:nth-child(2) {
-	text-align: center;
+	text-align: left;
 }
 
 .social-bar {
